@@ -1,4 +1,0 @@
-v1:
-    ngModel
-
-        It takes a value of an input and store in a variable, which is shown through a <p></p>
