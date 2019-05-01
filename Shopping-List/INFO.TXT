@@ -2,3 +2,10 @@ v1:
     ngModel
 
         It takes a value of an input and store in a variable, which is shown through a <p></p>
+
+v2:
+    <input type="text" (input)="showTyped($event)">
+
+    showTyped(event){
+        console.log(<HTMLInputElement>event.target.value);
+    }
