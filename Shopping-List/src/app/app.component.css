@@ -1,0 +1,10 @@
+p,ul{
+    font-size: 20pt;
+    color: green;
+    list-style-type: none;
+}
+
+.blue{
+    background-color: blue;
+    color:white;
+}
