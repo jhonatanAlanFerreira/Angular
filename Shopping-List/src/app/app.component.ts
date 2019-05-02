@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Shopping-List';
+  name = "Jhonatan";
+
+  typed(event){
+    console.log(<HTMLInputElement>event.target.value);
+  }
 }
