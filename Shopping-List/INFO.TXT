@@ -25,3 +25,7 @@ v3: -----
     ngStyle
 
         It takes a backgroundColor according with a condiction
+    ---------------------------------------------------------
+    ngClass
+
+        It works better than ngStyle, {`className`:`condition`}
