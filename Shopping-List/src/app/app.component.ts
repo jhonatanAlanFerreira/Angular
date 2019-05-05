@@ -6,12 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  enabled = false;
-  count = 0;
-  logs = [];
-
-  isClicked(){
-    this.enabled = !this.enabled;
-    console.log(this.logs.push(++this.count));
-  }
+ array = [
+  'Jhonatan',
+  'Alan',
+  'Bertini',
+  'Ferreira',
+  'Jessica',
+  'Carolina'
+ ];
+ busca;
 }

@@ -1,15 +1,9 @@
 <div class="container">
   <div class="row">
-    <button class="btn btn-success" (click)="isClicked()">Click here</button>
-  </div>
-  <div class="row">
-  <p> Message togle -> <span *ngIf="enabled">This is a message</span></p>
-</div>
-<div class="row">
-  <div class="col-md-6">
-    <ul>
-      <li *ngFor="let log of logs" [ngClass]="{blue: log >= 5}">{{ log }}</li>
-    </ul>
-   </div>
+    <input type="text" class="form-control" [(ngModel)]="busca">
+    <table>
+      <th>Nomes</th>
+      <tr *ngFor="let item of array | filter:busca"><td>{{item}}</td></tr>
+    </table>
 </div>
 </div>
