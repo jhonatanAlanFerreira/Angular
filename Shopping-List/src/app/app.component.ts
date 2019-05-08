@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Shopping-List';
+  num = 0;
+  setNum(){
+    this.num += 1;
+  }
 }
