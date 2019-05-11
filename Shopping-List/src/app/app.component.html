@@ -3,11 +3,19 @@
 </div>
     <div class="col-md-6">  
 
+<h2 style="color:blue;">Largura da tela: {{ tamanhoTela }} </h2>
+
+<br>
+
 <input
 #name
 type="text" 
 class="form-control"
-(keydown.enter)="getValue(name)">
+(keydown.enter)="getValue(name); $event.target.blur()">
+
+<!--         $event.preventDefault()        to do nothing  -->
+
+
 
 <!-- hr deixa uma linha na tela -->
 <hr>
