@@ -8,6 +8,8 @@ import { Component, OnInit, HostListener, ViewChild, ElementRef } from '@angular
 export class AppComponent implements OnInit{
   title = 'Shopping-List';
   @ViewChild('name') name: ElementRef;
+  @ViewChild('largura') largura: ElementRef ;
+
   tamanhoTela: any;
   
   @HostListener ('window:resize', ['$event'])
@@ -17,6 +19,7 @@ export class AppComponent implements OnInit{
 
   log(){
     console.log("Input >>> ",this.name.nativeElement.value);
+    console.log("largura >> ", this.largura.nativeElement.textContent);
   }
 
   change(){
