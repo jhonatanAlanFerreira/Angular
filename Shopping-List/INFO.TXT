@@ -22,10 +22,6 @@ v3: -----
 
             import { FormsModule } from '@angular/forms';
     --------------------------------------------------------
-    ngStyle
-
-        It takes a backgroundColor according with a condiction
-    --------------------------------------------------------
    
 v4: -----
     ngClass
@@ -36,8 +32,22 @@ v5: -----
     #nameElement
 
         It takes any element of a HTML, (input = #nameElement.value)
+    ----------------------------------------------------------
 
     keydown.enter=""
 
         enter events == focusIn, focusOut, doNothing, 
+    -----------------------------------------------------------
 
+    window.innerWidth
+
+        It takes the window's size
+    ---------------------------------------------------------
+
+    @HostListener ('window:resize', ['$event'])
+        onResize(event) {
+            this.tamanhoTela = window.innerWidth;
+        }
+
+        It checks changes on size af a screen
+    -------------------------------------------------------------
