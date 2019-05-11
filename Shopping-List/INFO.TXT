@@ -59,4 +59,16 @@ v6: -----
 
         It does two way binding with a #nameElement, updates in any function executation and it is possible to change its value through function
     ------------------------------------------------------------------------
+
+
+
+Lifecycle: -----
+
+    ngOnChanges: Called after a bound input property changes  @Input()
+    ngOninit: Called once the component is initialized
+    ngDoCheck: called during every change detection run
+    ngAfterContentInit: called after content (ng-content) has been projected into ViewChild
+    ngAfterContentChecked: called every time the projected content has been ngAfterContentChecked
+    ngAfterViewInit: called after the component's view (and child views) have been ngAfterContentChecked
+    ngOnDestroy: called once the component is about to be destroyed
     
