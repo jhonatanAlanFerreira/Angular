@@ -39,5 +39,5 @@ v5: -----
 
     keydown.enter=""
 
-        enter events
+        enter events == focusIn, focusOut, doNothing, 
 
