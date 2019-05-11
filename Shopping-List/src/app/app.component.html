@@ -1,6 +1,28 @@
 <div class="row" style="margin-top:10px;">
-    <div class="col-md-3"></div>
-    <div class="col-md-6">    
-<input type="text" class="form-control" [(ngModel)]="name">
-<p>{{ name }}</p></div>
+    <div class="col-md-3">
+</div>
+    <div class="col-md-6">  
+
+<input
+#name
+type="text" 
+class="form-control"
+(keydown.enter)="getValue(name)">
+
+<!-- hr deixa uma linha na tela -->
+<hr>
+
+<button 
+class="btn btn-primary"
+
+(click)="getValue(name)"
+>getValue
+</button>
+
+<br>
+
+<h1 style="color:green;">{{ name.value }}</h1>
+
+    </div>
+
 </div>

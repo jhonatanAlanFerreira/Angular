@@ -7,5 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Shopping-List';
-  name = "Jhonatan";
+  name;
+  
+  getValue(value){
+    this.name = value;
+    console.log("Element",this.name);
+  }
+
 }
