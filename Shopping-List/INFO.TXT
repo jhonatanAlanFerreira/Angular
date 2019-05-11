@@ -27,6 +27,7 @@ v4: -----
     ngClass
 
         It works better than ngStyle: {`className`:`condiction`}
+    ---------------------------------------------------------------
 
 v5: -----
     #nameElement
@@ -51,3 +52,11 @@ v5: -----
 
         It checks changes on size af a screen
     -------------------------------------------------------------
+
+v6: -----
+
+    ViewChild
+
+        It does two way binding with a #nameElement, updates in any function executation and it is possible to change its value through function
+    ------------------------------------------------------------------------
+    
