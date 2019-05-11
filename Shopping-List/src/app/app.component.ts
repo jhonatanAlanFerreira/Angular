@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit, HostListener, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,17 +7,21 @@ import { Component, OnInit, HostListener } from '@angular/core';
 })
 export class AppComponent implements OnInit{
   title = 'Shopping-List';
-  name;
+  @ViewChild('name') name: ElementRef;
   tamanhoTela: any;
   
-  getValue(value){
-    this.name = value;
-    console.log("Element",this.name);
-  }
-
   @HostListener ('window:resize', ['$event'])
   onResize(event) {
     this.tamanhoTela = window.innerWidth;
+  }
+
+  log(){
+    console.log("Input >>> ",this.name.nativeElement.value);
+  }
+
+  change(){
+    this.name.nativeElement.value = "Changed!";
+    console.log("Changed >> ",this.name.nativeElement.value);
   }
 
   ngOnInit(){

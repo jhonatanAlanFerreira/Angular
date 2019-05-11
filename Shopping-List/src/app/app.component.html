@@ -11,7 +11,7 @@
 #name
 type="text" 
 class="form-control"
-(keydown.enter)="getValue(name); $event.target.blur()">
+(keydown.enter)="$event.target.blur()">
 
 <!--         $event.preventDefault()        to do nothing  -->
 
@@ -22,15 +22,14 @@ class="form-control"
 
 <button 
 class="btn btn-primary"
-
-(click)="getValue(name)"
+(click)="log()"
 >getValue
 </button>
 
 <button class="btn btn-success"
 style="margin-left:10px;"
-(click)="name.focus()"
->Focar</button>
+(click)="change()"
+>Change</button>
 
 <br>
 
