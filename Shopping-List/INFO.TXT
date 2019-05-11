@@ -26,6 +26,18 @@ v3: -----
 
         It takes a backgroundColor according with a condiction
     --------------------------------------------------------
+   
+v4: -----
     ngClass
 
         It works better than ngStyle: {`className`:`condiction`}
+
+v5: -----
+    #nameElement
+
+        It takes any element of a HTML, (input = #nameElement.value)
+
+    keydown.enter=""
+
+        enter events
+
