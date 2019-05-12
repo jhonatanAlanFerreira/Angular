@@ -71,4 +71,26 @@ Lifecycle: -----
     ngAfterContentChecked: called every time the projected content has been ngAfterContentChecked
     ngAfterViewInit: called after the component's view (and child views) have been ngAfterContentChecked
     ngOnDestroy: called once the component is about to be destroyed
+    --------------------------------------------------------------------------------------------------------
     
+Repeat Function & random number: -----
+
+    start(){
+        this.interval = setInterval(()=>{
+        this.event.emit(Math.floor(Math.random()*100));
+        },1000)
+    }
+    
+    stop(){
+        clearInterval(this.interval);
+    }
+    ------------------------------------------------------------------------------------------------
+
+Auto Scroll: -----
+
+    @ViewChild("scroll") autoScroll: ElementRef;
+
+     ngAfterViewChecked(){
+        this.autoScroll.nativeElement.scrollIntoView(false);
+     }
+     ----------------------------------------------------------------------------------------------
