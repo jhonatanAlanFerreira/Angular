@@ -60,6 +60,11 @@ v6: -----
         It does two way binding with a #nameElement, updates in any function executation and it is possible to change its value through function
     ------------------------------------------------------------------------
 
+v7: -----
+
+    Creating directive (ng g d nameDirective) and passing array through binding with Input having same alias
+    no alias would be => <div directiveName [toBinding]="someVariable" ></div>
+    --------------------------------------------------------------------------------
 
 
 Lifecycle: -----
