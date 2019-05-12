@@ -8,4 +8,6 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Shopping-List';
   name = "Jhonatan";
+
+  estilos = ["color","blue","fontSize","40pt","opacity","0.5","marginTop","10px"];
 }
