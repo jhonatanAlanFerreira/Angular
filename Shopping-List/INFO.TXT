@@ -66,6 +66,14 @@ v7: -----
     no alias would be => <div directiveName [toBinding]="someVariable" ></div>
     --------------------------------------------------------------------------------
 
+    Using slice() to get a copy of an array without reference
+    ---------------------------------------------------------------------
+
+    sorting element through key.value
+    ------------------------------------------------------------------------------
+
+    using ngAfterContentInit to do something after component is created
+    --------------------------------------------------------------------------
 
 Lifecycle: -----
 
@@ -99,3 +107,11 @@ Auto Scroll: -----
         this.autoScroll.nativeElement.scrollIntoView(false);
      }
      ----------------------------------------------------------------------------------------------
+
+delay: -----
+
+    setTimeOut(() => {
+        some Code.....
+    })
+    -------------------------------------------------------------------------------------
+    
