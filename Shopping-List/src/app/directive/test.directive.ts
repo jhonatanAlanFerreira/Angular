@@ -15,7 +15,7 @@ export class TestDirective implements OnInit {
     this.styling(new Style("color","red"));
   }
 
-  // filtering by key and geting the laste element
+  // filtering by key and geting the last element
   @HostListener('mouseleave') mouseOut(){
     let color = this.style.filter(element => element.style == "color");
     this.styling(color.slice(-1)[0]);
