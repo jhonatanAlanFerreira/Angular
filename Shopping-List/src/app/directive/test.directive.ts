@@ -1,11 +1,11 @@
-import { Directive, OnInit, Renderer2, ElementRef, Input, HostListener } from '@angular/core';
+import { Directive, OnInit, Renderer2, ElementRef, Input, HostListener, AfterViewChecked, AfterContentInit } from '@angular/core';
 import { Style } from './style.model';
 import { element } from '@angular/core/src/render3';
 
 @Directive({
   selector: '[appEstilos]'
 })
-export class TestDirective implements OnInit {
+export class TestDirective implements OnInit, AfterContentInit {
 
   style:Style[] = [];
   @Input('appEstilos') estilos:[];
@@ -32,6 +32,24 @@ ngOnInit(){
 
   this.style.forEach(element => this.styling(element));
   
+}
+
+ngAfterContentInit(){
+  
+// just a test, it is not needed
+
+console.log("Anterior >> ", this.style);
+
+var ordenados = this.style.slice();
+
+  ordenados.sort(function(a,b){
+    if(a.value > b.value) return 1;
+    if(b.value > a.value) return -1;
+    return 0;
+  });
+
+console.log("Ordenados >> ",ordenados);
+
 }
 
 // setStyle needs to have 3 elements, the first one is the element which has its declaration, then the style and its value
