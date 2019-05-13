@@ -42,13 +42,9 @@ console.log("Anterior >> ", this.style);
 
 var ordenados = this.style.slice();
 
-  ordenados.sort(function(a,b){
-    if(a.value > b.value) return 1;
-    if(b.value > a.value) return -1;
-    return 0;
-  });
+ordenados.sort((a,b) => a.value > b.value? 1:(b.value > a.value? -1: 0));
 
-console.log("Ordenados >> ",ordenados);
+console.log("Ordenados >> ", ordenados);
 
 }
 
