@@ -75,6 +75,10 @@ v7: -----
     using ngAfterContentInit to do something after component is created
     --------------------------------------------------------------------------
 
+    @HostListener
+
+        It gets the element HTML where it was declared
+
 Lifecycle: -----
 
     ngOnChanges: Called after a bound input property changes  @Input()
