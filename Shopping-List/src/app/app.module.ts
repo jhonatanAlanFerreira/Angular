@@ -4,11 +4,13 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { UnlessDirective } from './unless.directive';
+import { ForComponent } from './for/for.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UnlessDirective
+    UnlessDirective,
+    ForComponent
   ],
   imports: [
     BrowserModule,

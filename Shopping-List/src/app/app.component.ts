@@ -10,6 +10,8 @@ export class AppComponent {
   count = 0;
   logs = [];
 
+  names = ["Jhonatan","Alan","Bertini","Ferreira"];
+
   isClicked(){
     this.enabled = !this.enabled;
     console.log(this.logs.push(++this.count));
