@@ -29,6 +29,9 @@ v4: -----
         It works better than ngStyle: {`className`:`condiction`}
     ---------------------------------------------------------------
 
+    component to FOR EXEMPLE
+    --------------------------------------------------------------
+
 v5: -----
     #nameElement
 
