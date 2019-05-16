@@ -4,3 +4,20 @@
 <input type="text" class="form-control" [(ngModel)]="name">
 <p>{{ name }}</p></div>
 </div>
+
+<h2>Numero é {{ number }}</h2>
+
+<div [ngSwitch]="number">
+
+    <li *ngSwitchCase ="1">
+<h1>Nao</h1>
+    </li>
+
+    <li>
+        <h1 *ngSwitchCase="10">Certo</h1>
+    </li>
+
+    <li *ngSwitchDefault>
+        <h1 >Default</h1>
+    </li>
+</div>
