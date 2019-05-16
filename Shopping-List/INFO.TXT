@@ -22,6 +22,11 @@ v3: -----
 
             import { FormsModule } from '@angular/forms';
     --------------------------------------------------------
+
+    [ngSwitch]="var"
+        *ngSwitchCase="1"
+        *ngSwitchDefault
+    ------------------------------------------------------------
    
 v4: -----
     ngClass
