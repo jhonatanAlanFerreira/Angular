@@ -2,11 +2,6 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.container{
-    width: 800px;
-    margin: 70px auto;
-}
-
 .tooltipUp, .tooltipDown, .tooltipLeft, .tooltipRight{
     position: relative;
     display: inline-block;
@@ -27,7 +22,7 @@ body{
     margin-left: -75px;
     opacity: 0;
     transform: translateY(0);
-    transition: 800ms;
+    transition: 1000ms;
 }
 
 .tooltipUp:hover .tooltiptextUp{
@@ -59,7 +54,7 @@ body{
     margin-left: -75px;
     opacity: 0;
     transform: translateY(0);
-    transition: 800ms;
+    transition: 1000ms;
 }
 
 .tooltipDown:hover .tooltiptextDown{
@@ -90,7 +85,7 @@ body{
     right: 105%;
     opacity: 0;
     transform: translateX(0);
-    transition: 800ms;
+    transition: 1000ms;
 }
 
 .tooltipLeft:hover .tooltiptextLeft{
@@ -121,7 +116,7 @@ body{
     left: 105%;
     opacity: 0;
     transform: translateX(0);
-    transition: 800ms;
+    transition: 1000ms;
 }
 
 .tooltipRight:hover .tooltiptextRight{

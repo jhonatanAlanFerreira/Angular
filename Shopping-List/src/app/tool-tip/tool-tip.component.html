@@ -1,4 +1,3 @@
-<div class="container">
   <div 
   [ngClass]="{tooltipUp: location=='cima', 
   tooltipDown: location=='baixo',
@@ -6,6 +5,7 @@
   tooltipRight: location=='direita'}">
   
     <span>?</span> <!-- Usar classe Bootstrap interrogation-circle -->
+    
     <div #tooltiptext 
     [ngClass]="{tooltiptextUp: location=='cima', 
     tooltiptextDown: location=='baixo',
@@ -21,4 +21,3 @@
       <ng-content></ng-content>
     </div>
   </div>
-</div>
