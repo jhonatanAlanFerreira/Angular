@@ -13,6 +13,7 @@ export class ToolTipComponent implements OnInit {
   @Input('corFundo') background = "grey";
   @Input('corLetra') textcolor = "white";
   @Input('largura') width = 150;
+  @Input('posicao') location = "baixo";
  
   constructor(private renderer:Renderer2) { }
 
@@ -20,9 +21,14 @@ export class ToolTipComponent implements OnInit {
     this.renderer.setStyle(this.element.nativeElement,"width",this.width+"px");
     this.renderer.setStyle(this.element.nativeElement,"margin-left",-this.width/2+"px");
     this.renderer.setStyle(this.element.nativeElement,"color",this.textcolor);
-
     this.renderer.setStyle(this.element.nativeElement,"backgroundColor",this.background);
-    this.renderer.setStyle(this.square.nativeElement,"borderColor",this.background+" transparent transparent transparent");
+
+    switch(this.location){
+    case "cima": this.renderer.setStyle(this.square.nativeElement,"borderColor",this.background+" transparent transparent transparent");break;
+    case "esquerda": this.renderer.setStyle(this.square.nativeElement,"borderColor",this.background+" transparent transparent transparent"); break;
+    case "direita": this.renderer.setStyle(this.square.nativeElement,"borderColor",this.background+" transparent transparent transparent"); break;
+    default: this.renderer.setStyle(this.square.nativeElement,"borderColor","transparent transparent "+this.background+" transparent"); break; 
+    }
   }
 
 }

@@ -1,8 +1,8 @@
 <div class="container">
-  <div class="tooltip">
+  <div [ngClass]="{tooltipUp: location=='cima', tooltipDown: location=='baixo'}">
     ?
-    <div #tooltiptext class="tooltiptext">
-      <div #square class="square"></div>
+    <div #tooltiptext [ngClass]="{tooltiptextUp: location=='cima', tooltiptextDown: location=='baixo'}">
+      <div #square [ngClass]="{squareUp: location=='cima', squareDown: location=='baixo'}"></div>
       <ng-content></ng-content>
     </div>
   </div>
