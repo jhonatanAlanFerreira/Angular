@@ -1,8 +1,9 @@
 <div class="container">
   <div class="tooltip">
     ?
-    <div class="tooltiptext">
-      This is a tooltip mensage
+    <div #tooltiptext class="tooltiptext">
+      <div #square class="square"></div>
+      <ng-content></ng-content>
     </div>
   </div>
 </div>
