@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild, ElementRef, Renderer2, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-tool-tip',
+  selector: 'jh-tooltip',
   templateUrl: './tool-tip.component.html',
   styleUrls: ['./tool-tip.component.css']
 })
