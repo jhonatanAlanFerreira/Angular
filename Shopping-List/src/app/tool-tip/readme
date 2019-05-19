@@ -1,4 +1,4 @@
-Esse componente é uma span com um icone de interrogação(Bootstrap) que em quanto o cursor estiver sobre, exibe uma mensagem como dica.
+Esse componente é um icone de interrogação(Bootstrap4) que em quanto o cursor estiver sobre, exibe uma mensagem como dica.
 A mensagem que será exibida deverá estar entre "<app-tooltip></app-tooltip>".
 
 Parametros:
@@ -17,11 +17,17 @@ Parametros:
     movimento (boolean) configura se a mensagem terá animação de movimento (slide), 
     se não for definido usará true como default.
 
+    corIcone (string) configura a cor do icone de interrogação,
+    se não for definido usará "grey" como default.
+
+    tamanhoIcone (string) configura o tamanho do icone(Bootstrap$). Valores possíveis: 'fa-lg', 'fa-2x', 'fa-3x', 'fa-4x', 'fa-5x'.
+
 Exemplo:
     <app-tooltip 
     [corFundo]=" '#41f4a3' "
     [posicao]=" 'direita' "
-    [largura]="300">
+    [largura]="300"
+    [corIcone]=" '#41f4a3' ">
 
         Isso sempre aparece em quanto o cursor estiver sobre o icone de interrogação ou sobre a pŕopria mensagem!
 

@@ -22,7 +22,7 @@ body{
     margin-left: -75px;
     opacity: 0;
     transform: translateY(0);
-    transition: 1000ms;
+    transition: 500ms;
 }
 
 .tooltipUp:hover .tooltiptextUp{
@@ -54,7 +54,7 @@ body{
     margin-left: -75px;
     opacity: 0;
     transform: translateY(0);
-    transition: 1000ms;
+    transition: 500ms;
 }
 
 .tooltipDown:hover .tooltiptextDown{
@@ -85,7 +85,7 @@ body{
     right: 105%;
     opacity: 0;
     transform: translateX(0);
-    transition: 1000ms;
+    transition: 500ms;
 }
 
 .tooltipLeft:hover .tooltiptextLeft{
@@ -116,7 +116,7 @@ body{
     left: 105%;
     opacity: 0;
     transform: translateX(0);
-    transition: 1000ms;
+    transition: 500ms;
 }
 
 .tooltipRight:hover .tooltiptextRight{
