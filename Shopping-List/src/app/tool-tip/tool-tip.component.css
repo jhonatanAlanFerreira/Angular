@@ -7,7 +7,7 @@ body{
     margin: 70px auto;
 }
 
-.tooltipUp, .tooltipDown{
+.tooltipUp, .tooltipDown, .tooltipLeft, .tooltipRight{
     position: relative;
     display: inline-block;
 }
@@ -76,6 +76,35 @@ body{
     border: 5px solid;
 }
 
-/* */
+/* Para Esquerda */
+.tooltiptextLeft{
+    visibility: hidden;
+    width: 150px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    right: 105%;
+    opacity: 0;
+    transform: translateX(0);
+    transition: 800ms;
+}
+
+.tooltipLeft:hover .tooltiptextLeft{
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-5%);
+}
+
+.squareLeft{
+    content: " ";
+    position: absolute;
+    top: 20%;
+    left: 100%;
+    margin-right: -5px;
+    border: 5px solid;
+}
 
 /* */

@@ -1,8 +1,19 @@
 <div class="container">
-  <div [ngClass]="{tooltipUp: location=='cima', tooltipDown: location=='baixo'}">
-    ?
-    <div #tooltiptext [ngClass]="{tooltiptextUp: location=='cima', tooltiptextDown: location=='baixo'}">
-      <div #square [ngClass]="{squareUp: location=='cima', squareDown: location=='baixo'}"></div>
+  <div 
+  [ngClass]="{tooltipUp: location=='cima', 
+  tooltipDown: location=='baixo',
+  tooltipLeft: location=='esquerda'}">
+    <span>?</span> <!-- Usar classe Bootstrap interrogation-circle -->
+    <div #tooltiptext 
+    [ngClass]="{tooltiptextUp: location=='cima', 
+    tooltiptextDown: location=='baixo',
+    tooltiptextLeft: location=='esquerda'}">
+
+      <div #square 
+      [ngClass]="{squareUp: location=='cima', 
+      squareDown: location=='baixo',
+      squareLeft: location=='esquerda'}"></div>
+
       <ng-content></ng-content>
     </div>
   </div>

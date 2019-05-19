@@ -25,7 +25,7 @@ export class ToolTipComponent implements OnInit {
 
     switch(this.location){
     case "cima": this.renderer.setStyle(this.square.nativeElement,"borderColor",this.background+" transparent transparent transparent");break;
-    case "esquerda": this.renderer.setStyle(this.square.nativeElement,"borderColor",this.background+" transparent transparent transparent"); break;
+    case "esquerda": this.renderer.setStyle(this.square.nativeElement,"borderColor","transparent transparent transparent "+this.background); break;
     case "direita": this.renderer.setStyle(this.square.nativeElement,"borderColor",this.background+" transparent transparent transparent"); break;
     default: this.renderer.setStyle(this.square.nativeElement,"borderColor","transparent transparent "+this.background+" transparent"); break; 
     }
