@@ -19,15 +19,20 @@ export class ToolTipComponent implements OnInit {
 
   ngOnInit() {
     this.renderer.setStyle(this.element.nativeElement,"width",this.width+"px");
-    this.renderer.setStyle(this.element.nativeElement,"margin-left",-this.width/2+"px");
     this.renderer.setStyle(this.element.nativeElement,"color",this.textcolor);
     this.renderer.setStyle(this.element.nativeElement,"backgroundColor",this.background);
 
     switch(this.location){
-    case "cima": this.renderer.setStyle(this.square.nativeElement,"borderColor",this.background+" transparent transparent transparent");break;
+
+    case "cima": this.renderer.setStyle(this.square.nativeElement,"borderColor",this.background+" transparent transparent transparent");
+    this.renderer.setStyle(this.element.nativeElement,"margin-left",-this.width/2+"px"); break;
+
     case "esquerda": this.renderer.setStyle(this.square.nativeElement,"borderColor","transparent transparent transparent "+this.background); break;
-    case "direita": this.renderer.setStyle(this.square.nativeElement,"borderColor",this.background+" transparent transparent transparent"); break;
-    default: this.renderer.setStyle(this.square.nativeElement,"borderColor","transparent transparent "+this.background+" transparent"); break; 
+   
+    case "direita": this.renderer.setStyle(this.square.nativeElement,"borderColor","transparent "+this.background+" transparent transparent"); break;
+    
+    default: this.renderer.setStyle(this.square.nativeElement,"borderColor","transparent transparent "+this.background+" transparent"); 
+    this.renderer.setStyle(this.element.nativeElement,"margin-left",-this.width/2+"px"); break; 
     }
   }
 
