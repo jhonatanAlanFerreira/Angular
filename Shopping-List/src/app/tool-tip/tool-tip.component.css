@@ -10,6 +10,7 @@ body{
 .tooltipUp, .tooltipDown, .tooltipLeft, .tooltipRight{
     position: relative;
     display: inline-block;
+    padding: 5px;
 }
 
 /* Para Cima */
