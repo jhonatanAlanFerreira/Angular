@@ -12,14 +12,17 @@ export class ToolTipComponent implements OnInit {
 
   @Input('corFundo') background = "grey";
   @Input('corLetra') textcolor = "white";
-
+  @Input('largura') width = 150;
+ 
   constructor(private renderer:Renderer2) { }
 
   ngOnInit() {
+    this.renderer.setStyle(this.element.nativeElement,"width",this.width+"px");
+    this.renderer.setStyle(this.element.nativeElement,"margin-left",-this.width/2+"px");
+    this.renderer.setStyle(this.element.nativeElement,"color",this.textcolor);
+
     this.renderer.setStyle(this.element.nativeElement,"backgroundColor",this.background);
     this.renderer.setStyle(this.square.nativeElement,"borderColor",this.background+" transparent transparent transparent");
-
-    this.renderer.setStyle(this.element.nativeElement,"color",this.textcolor);
   }
 
 }
